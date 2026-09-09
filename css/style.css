@@ -1,0 +1,276 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "DM Serif Display", serif;
+  background-color: #570303;
+}
+
+/****************   Nav Section **********************/
+nav {
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 10;
+
+  margin: 8px;
+  border-radius: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.75);
+
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 32px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff
+}
+
+nav p {
+  margin: 0px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: #ffffff;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 16px;
+  background-color: #000000;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: #ffffff;
+}
+
+/*********** Splash Page ************************/
+.topBackground {
+  background-image: radial-gradient(#be8577, #570303);
+}
+
+header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  gap: 40px;
+}
+
+header h1 {
+  color: #000000;
+  margin: 0px;
+  font-family: "DM Serif Display";
+}
+
+header img {
+  width: 50%;
+  max-width: 500px;
+  border: 32px solid #ffffff;
+  box-shadow: 0 0 0 16px #000000;
+}
+
+.textbox {
+  width: fit-content;
+  background-color: #ffffff;
+  border: 8px solid black;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+.address {
+  margin: 0px;
+}
+
+.tagline {
+  margin: 0px;
+}
+
+/************* Sections ********************/
+hr {
+  margin: 0px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+section h2 {
+  color: white;
+  font-family: "DM Serif Display";
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 16px 16px;
+  margin: 0;
+  padding: 16px;
+  width: fit-content;
+  background-color: #ffffff;
+  border: 8px solid black;
+}
+
+section dt {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+section ul {
+  list-style-type: square;
+  gap: 16px;
+  padding: 16px 32px;
+  font-size: 1.25rem;
+  width: fit-content;
+  background-color: #ffffff;
+  border: 8px solid black;
+}
+
+section a {
+  text-decoration: none;
+  color: #000000;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+section a:visited {
+  color: #000000;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px 16px;
+}
+
+.card img {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  border: 16px solid #ffffff;
+  box-shadow: 0 0 0 8px #000000;
+  width: 300px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #000000;
+  padding: 16px;
+  background-image: radial-gradient(#be8577 0%, #570303 80%);
+}
+
+.card:hover {
+  background-image: radial-gradient(#d9b5ab 0%, #852929 80%);
+}
+
+.card h3 {
+  color: #ffffff;
+  font-family: "DM Serif Display";
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 700px) {
+  nav {
+    flex-direction:column;
+  }
+  
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+
+  nav p {
+    padding: 8px;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one-col form {
+  background-color: #ffffff;
+  border: 8px solid black;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  width: 80%;
+}
+
+hr {
+  width: 100%;
+}
+
+label {
+  font-size: 1.25rem;
+}
+
+input {
+  font-family: inherit;
+  border: 2px solid black;
+  font-size: 1.25rem;
+  padding: 8px;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: 1.25rem;
+  height: 96px;
+  border: 2px solid black;
+}
+
+input[type="submit"] {
+  background-color: #852929;
+  color: #ffffff;
+}
+
+input[type="submit"]:hover {
+  background-color: #570303;
+  color: #ffffff;
+}
